@@ -1,0 +1,21 @@
+Working with Git on Linux
+
+To work with git on Linux, we work in terminal (there are no official git desktop). One way to be able to clone repositories to your local PC on Linux is to set SSH keys which does not require to enter username and password for every time cloning. For doing this, I can check the links below which have explained how to set SSH keys and read them:
+
+    • https://linuxkamarada.com/en/2019/07/14/using-git-with-ssh-keys/#.YkMVCdDML0o
+    • https://www.techrepublic.com/article/how-to-view-your-ssh-keys-in-linux-macos-and-windows/
+
+After setting the SSH keys, here how we can create a repository, clone and push into it.
+
+First we need to create a repository on Github website. After creating it, we can clone it to our PC with the commands below:
+
+    • First open the terminal and cd the direcotty that you would like to clone the repository to. Then write the command below:
+    • git init   > it initializes the repository with the .git file in the specified directory 
+    • git add .    > add all the files to the given folder
+    • git status   > view all the files which are going to be commit
+    • git commit -m “our message”   > to commit with our message
+    • Then copy the repository URL:
+    • git remote add origin “URL”
+    • git push -u origin main 
+ 
+Before doing the steps above, we also can <git clone ssh of the repository> and then cd to the directory of this repository on our PC. If we do this, the folder has already .git inside of it so we don’t need to do git init.
