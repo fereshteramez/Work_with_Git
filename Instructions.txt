@@ -19,3 +19,4 @@ First we need to create a repository on Github website. After creating it, we ca
     • git push -u origin main 
  
 Before doing the steps above, we also can <git clone ssh of the repository> and then cd to the directory of this repository on our PC. If we do this, the folder has already .git inside of it so we don’t need to do git init.
+ssh -T git@github.com > to set the SSH after it's done
