@@ -23,6 +23,7 @@ Before doing the steps above, we also can <git clone ssh of the repository> and 
 In case you are working with SSH, then you should use the commands below so you are not every time asked for users and passwords:
 
    • ssh -T git@github.com > to set the SSH after it's done
+   • git clone the repository
    • git remote set-url origin git@github.com:username/your-repository.git
    • git add .
    • git commit -am "Update README.md"
